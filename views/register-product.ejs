@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/product.css">
+    <title>Bela Amora | Cadastro de Produtos</title>
+</head>
+<body id="global-container">
+    <header id="header-container">
+        <a href="">
+            <img src="medias/images/bela-amora-logo.svg" alt="">
+        </a>
+        <h1 class="style-titles">Bela Amora - Sistema E.R.P</h1>
+    </header>
+    <main id="main-container">
+        <h1 class="style-titles">Cadastro de Produtos</h1>
+        <div id="form-container" >
+            <form action="/data-product" method="post">
+                <button id="btn-code-generator" class="btn-system" type="button">Gerar Código</button>
+                
+                <input class="medium-input-code" type="number" name="productCode" id="product-code" readonly autocomplete="off"> <br><br>
+                
+                <input class="large-inputs" type="text" name="productFullDescription" id="product-full-description" placeholder="Descrição completa do produto" style="text-transform: uppercase" autocomplete="off"> <br><br>
+                
+                <input class="medium-inputs" type="text" name="productShortDescription" id="product-short-description" placeholder="Descrição resumida do produto" style="text-transform: uppercase" autocomplete="off"> <br><br>
+                
+                <div id="price-container">
+                    <input class="small-inputs" type="text" name="productCostPrice" id="product-cost-price" placeholder="Preço de custo" autocomplete="off" value=""> 
+                    
+                    <input class="small-inputs" type="text" name="markup" id="markup" placeholder="Murkup (Ex: 1.8)" autocomplete="off" value="">
+
+                    <button id="btn-price-generator" class="btn-system" type="button">Calular Preço de Venda</button>
+                    
+                    <input class="small-inputs" type="text" name="productSalePrice" id="product-sale-price" placeholder="Preço de venda" autocomplete="off" readonly value=""> 
+                </div> <br><br>
+
+                <div id="btn-submit-container" ><button class="btn-system-submit" type="submit">Cadastrar</button></div>
+                    
+            </form>
+        </div>   
+    </main>
+    <aside id="aside-container"></aside>
+    <footer id="footer-container">
+        <h4 class="style-titles">Bela Amora - Todos os direitos 2021</h4>
+        <h4 class="style-titles">Criado por: Leandro Duarte</h4>
+    </footer>
+    <script src="scripts/product.js"></script>
+</body>
+</html>

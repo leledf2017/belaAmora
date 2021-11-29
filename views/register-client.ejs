@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/client.css">
+    <title>Bela Amora | Cadastro de Clientes</title>
+</head>
+<body id="global-container">
+    <header id="header-container">
+        <a href="">
+            <img src="medias/images/bela-amora-logo.svg" alt="">
+        </a>
+        <h1 class="style-titles">Bela Amora - Sistema E.R.P</h1>
+    </header>
+    <main id="main-container">
+        <h1 class="style-titles">Cadastro de Clientes</h1>
+        <div id="form-container">
+            <form action="/data-client" method="post">
+                <button id="btn-code-client-generator" class="btn-system" type="button">Gerar Código</button>
+                
+                <input class="medium-input-code" type="number" name="clientCode" id="client-code" readonly autocomplete="off"> <br><br>
+                
+                <input class="large-inputs" type="text" name="clientFirstName" id="client-first-name" placeholder="Nome" style="text-transform: uppercase" autocomplete="off"> <br><br>
+                
+                <input class="medium-inputs" type="text" name="clientLastName" id="client-last-name" placeholder="Sobrenome" style="text-transform: uppercase" autocomplete="off"> <br><br>
+                
+                <input class="medium-inputs" type="number" name="clientCpfCode" id="client-cpf-code" placeholder="CPF" style="text-transform: uppercase" autocomplete="off"> <br><br>
+                
+                <input class="medium-inputs" type="date" name="clientBirth" id="client-birth"> <br><br>
+
+                <input class="medium-inputs" type="text" name="clientAdress" id="client-adress" placeholder="Endereço" style="text-transform: uppercase" autocomplete="off"> <br><br>
+                
+                <input class="small-inputs" type="text" name="clientAdressNumber" id="client-adress-number" placeholder="Número" style="text-transform: uppercase" autocomplete="off"> <br><br>
+                
+                <input class="medium-inputs" type="text" name="clientAdressNumberPlus" id="client-adress-number-plus" placeholder="Complemento" style="text-transform: uppercase" autocomplete="off"> <br><br>
+                
+                <input class="medium-inputs" type="text" name="clientAdressNeighborhood" id="client-adress-neighborhood" placeholder="Bairro" style="text-transform: uppercase" autocomplete="off"> <br><br>
+                
+                <input class="medium-inputs" type="text" name="clientCity" id="client-city" placeholder="Cidade" style="text-transform: uppercase" autocomplete="off"> <br><br>
+                
+                <input class="small-inputs" type="text" name="clientState" id="client-state" placeholder="Estado" style="text-transform: uppercase" autocomplete="off"> <br><br>
+                
+                <input class="medium-inputs" type="number" name="clientZipCode" id="client-zip-code" placeholder="CEP" style="text-transform: uppercase" autocomplete="off"> <br><br>
+
+                <div id="btn-submit-container" ><button class="btn-system-submit" type="submit">Cadastrar</button></div>
+                    
+            </form>
+        </div>   
+    </main>
+    <aside id="aside-container"></aside>
+    <footer id="footer-container">
+        <h4 class="style-titles">Bela Amora - Todos os direitos 2021</h4>
+        <h4 class="style-titles">Criado por: Leandro Duarte</h4>
+    </footer>
+    <script src="scripts/client.js"></script>
+</body>
+</html>
